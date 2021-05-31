@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Web Design</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="./max_temperature.html">Temperature Plot</a>
+                        <a class=" dropdown-item" href="./humidity.html">Humdity Plot</a>
+                        <a class=" dropdown-item" href="./cloudiness.html">Cloudiness Plot</a>
+                        <a class=" dropdown-item" href="./windspeed.html">Windspeed PLot</a>
+                        <div class=" dropdown-divider">
+                        </div>
+                        <a class="dropdown-item" href="#">Back to Home Page</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="./comparison.html">Comparison <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./data.html">Data</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section class="row">
+            <div class="col-lg-7 col-md-12">
+                <div class="plot-content">
+                    <h1 class="plot-header">Data</h1>
+                    <hr>
+                    <img src="./visualisations/temperature_plot.png" alt="Latitude vs. Temperature" id="landing-image">
+
+                    <table class="table1">
+                        <thead class="tablehead">
+                            <tr>
+                                <th>City_ID</th>
+                                <th>City</th>
+                                <th>Cloudiness</th>
+                                <th>Country</th>
+                                <th>Date</th>
+                                <th>Humidity</th>
+                                <th>Latitude</th>
+                                <th>Longitude</th>
+                                <th>Max Temperature</th>
+                                <th>Wind Speed</th>
+                            </tr>
+                        </thead>
+                        </tbody>
+                        <tr>
+                            <td>0</td>
+                            <td>Jacareacanga</td>
+                            <td>0</td>
+                            <td>BR</td>
+                            <td>1528902000</td>
+                            <td>62</td>
+                            <td>-6.22</td>
+                            <td>-57.76</td>
+                            <td>89.6</td>
+                            <td>6.93</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>kaitangata</td>
+                            <td>100</td>
+                            <td>NZ</td>
+                            <td>1528905304</td>
+                            <td>94</td>
+                            <td>-46.28</td>
+                            <td>169.85</td>
+                            <td>42.61</td>
+                            <td>5.64</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>goulburn</td>
+                            <td>20</td>
+                            <td>AU</td>
+                            <td>1528905078</td>
+                            <td>91</td>
+                            <td>-34.75</td>
+                            <td>149.72</td>
+                            <td>44.32</td>
+                            <td>10.11</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>lata</td>
+                            <td>76</td>
+                            <td>IN</td>
+                            <td>1528905305</td>
+                            <td>89</td>
+                            <td>30.78</td>
+                            <td>78.62</td>
+                            <td>59.89</td>
+                            <td>0.94</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>chokurdakh</td>
+                            <td>0</td>
+                            <td>RU</td>
+                            <td>1528905306</td>
+                            <td>88</td>
+                            <td>70.62</td>
+                            <td>147.9</td>
+                            <td>32.17</td>
+                            <td>2.95</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>martyush</td>
+                            <td>92</td>
+                            <td>RU</td>
+                            <td>1528905306</td>
+                            <td>94</td>
+                            <td>56.4</td>
+                            <td>61.89</td>
+                            <td>55.03</td>
+                            <td>9.33</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>hobart</td>
+                            <td>20</td>
+                            <td>AU</td>
+                            <td>1528902000</td>
+                            <td>87</td>
+                            <td>-42.88</td>
+                            <td>147.33</td>
+                            <td>44.6</td>
+                            <td>8.05</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>broken hill</td>
+                            <td>0</td>
+                            <td>AU</td>
+                            <td>1528905311</td>
+                            <td>88</td>
+                            <td>-31.97</td>
+                            <td>141.45</td>
+                            <td>44.5</td>
+                            <td>7.31</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>harnosand</td>
+                            <td>0</td>
+                            <td>SE</td>
+                            <td>1528903200</td>
+                            <td>44</td>
+                            <td>62.63</td>
+                            <td>17.94</td>
+                            <td>60.8</td>
+                            <td>13.87</td>
+                        </tr>
+                </div>
+            </div>
+
+
+            </a>
+    </div>
+    </div>
+    </div>
+
+    </div>
+    </div>
+    </div>
+    <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+    </div>
+    </nav>
+    <h3>Visualizations</h3>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
