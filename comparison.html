@@ -7,23 +7,30 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="/index.html">Latitude</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
+            <ul class="nav navbar-nav ms-auto w-100 justify-content-end">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#">Comparison</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -34,17 +41,12 @@
                         <a class="dropdown-item" href="./max_temperature.html">Temperature Plot</a>
                         <a class=" dropdown-item" href="./humidity.html">Humdity Plot</a>
                         <a class=" dropdown-item" href="./cloudiness.html">Cloudiness Plot</a>
-                        <a class=" dropdown-item" href="./windspeed.html">Windspeed PLot</a>
+                        <a class=" dropdown-item" href="./windspeed.html">Windspeed Plot</a>
                         <div class=" dropdown-divider">
                         </div>
-                        <a class="dropdown-item" href="./index.html">Back to HOme Page</a>
                     </div>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="./comparison.html">Comparison <span class="sr-only">(current)</span></a>
-                </li>
-
-                <li class="nav-item">
+                <li class=" nav-item">
                     <a class="nav-link" href="./data.html">Data</a>
                 </li>
             </ul>
@@ -53,57 +55,47 @@
 
     <div class="container">
         <section class="row">
-            <div class="col-lg-7 col-md-12">
-                <div class="plot-content">vs. Max Temperature</div>
-                <a href="./max_temperature.html">
-                    <img src="./visualisations/temperature_plot.png" alt="Latitude vs. Max Temperature"
-                        id="landing-image">
-                </a>
-            </div>
+            <div class="box">
+                <!-- <div class="plot-content"> -->
+                    <h2 class="plot-header">Comparison: Latitude vs. X</h2>
+                    <hr>
+                    <p>Click any plot to get an in-depth analysis.</p>
 
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-3">
-                        <a href="./humidity.html">
-                            <img src="./visualisations/humidity_plot.png" alt="Latitude vs. Humidity" id="vis-image">
+                    <div class="container" style="padding-bottom: 10px;">
+                        <div class="row">
+                            <div class="col-lg-6" style="padding-bottom: 30px;">
+                                <div class="title">vs. Max Temperature</div>
+                                <a href="temperature.html">
+                                    <img src="Resources/assets/images/temp.png" alt="Latitude vs. Temperature"
+                                        id="landing-image" class="main-image">
+                                </a>
+                            </div>
+                        </div class="col-lg-6" style="padding-bottom: 30px;">
+                        <div> class="title">vs. Humidity</div>
+                        <a href="humidity.html">
+                            <img src="Resources/assets/images/humidity.png" alt="Latitude vs. Temperature">
                         </a>
                     </div>
 
-
-                    <div class="col-lg-6 col-md-3">
-                        <a href="./cloudiness.html">
-                            <img src="./visualisations/clouds_plot.png" alt="Latitude vs. Cloudiness" id="vis-image">
-                        </a>
-                    </div>
-
-                    <div class="col-lg-6 col-md-3">
-                        <a href="./windspeed.html">
-                            <img src="./visualisations/wind_plot.png" alt="Latitude vs. WindSpeed" id="vis-image">
-                        </a>
+                    <div class="row">
+                        <div class="col-lg-6" style="padding-bottom: 30px;">
+                            <div class="title">vs. Cloudiness</div>
+                            <a href="cloudiness.html">
+                                <img src="Resources/assets/images/cloudiness.png" alt="Latitude vs. Temperature"
+                                    id="landing-image" class="main-image">
+                            </a>
+                        </div>
+                        div class="row">
+                        <div class="col-lg-6" style="padding-bottom: 30px;">
+                            <div class="title">vs. Windspeed</div>
+                            <a href="windspeed.html">
+                                <img src="Resources/assets/images/windspeed.png" alt="Latitude vs. Temperature"
+                                    id="landing-image" class="main-image">
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-    </div>
-    </div>
-    </div>
-    <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-    </div>
-    </nav>
-    <h3>Visualizations</h3>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-</body>
+                /body>
 
 </html>
